@@ -9,3 +9,13 @@ public:
     Node *leftchilde;
     Node *rightchild;
 
+    //constructor for the node class
+    Node(string i, Node *l, Node *r)
+    {
+        info = i;
+        leftchilde = l;
+        rightchild = r;
+    }
+};
+
+class BinaryTree
