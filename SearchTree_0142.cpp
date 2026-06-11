@@ -86,6 +86,12 @@ public:
             return;
         }
 
-        if 
+        if (ptr != NULL)
+        {
+            inorder(ptr->leftchild);
+            cout << ptr->info << " ";
+            inorder(ptr->rightchild);
+        }
     }
+    
 }
