@@ -47,5 +47,15 @@ public:
             ROOT = newNode;
             return;
         }
+
+        if (element < parent->info)
+        {
+            parent->leftchilde = newNode;
+        }
+        else if (element > parent->info)
+        {
+            parent->rightchild = newNode;
+        }
     }
+    
 }
