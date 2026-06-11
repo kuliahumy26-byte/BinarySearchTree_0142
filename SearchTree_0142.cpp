@@ -23,3 +23,23 @@ class BinaryTree
 public:
     Node *ROOT;
 
+    BinaryTree()
+    {
+        ROOT = nullptr; //initially ROOT to null
+    }
+
+    //insert a nide un the binary search tree
+    void insert(string element)
+    {
+        Node *newNode = new Node(element, NULL, NULL);
+
+        newNode->info = element;
+        newNode->leftchilde = NULL;
+        newNode->rightchild = NULL;
+
+        Node *parent = NULL;
+        Node *currentNode = NULL;
+
+        search(element, parent, currentNode);
+    }
+}
