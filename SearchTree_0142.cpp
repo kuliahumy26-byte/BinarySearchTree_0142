@@ -142,5 +142,12 @@ int main()
         cout << "\nEnter your choice (1-5): ";
 
         char ch;
+        cin >> ch;
+
+        cout << endl;
+
+        switch(ch)
+        {
+        case '1':
     }
 }
